@@ -1,0 +1,477 @@
+<h1>Que es JAVASCRIPT</h1>
+<p>JavaScript es un lenguaje de programación dinámico que tiene la capacidad de ser utilizado en muchos dispositivos
+    diferentes. Puede usarse en ordenadores personales, servidores web y teléfonos inteligentes. Es un lenguaje
+    interpretado, orientado a objetos, débilmente tipado y dinámico.</p>
+
+<p>Esta aplicación se emplea comúnmente para el desarrollo web front-end y más recientemente para algunos desarrollos
+    back-end a través de frameworks como Node.Js. o Next.Js. Tiene características como la programación orientada a
+    objetos, funciones y herencia basada en prototipos.</p>
+
+
+<h2>¿Cómo nace Javascript?</h2>
+<p>Nace con la necesidad de generar dinamismo en las páginas web y que a su vez los usuarios y las empresas pudieran
+    interactuar unos con otros. Fue creado por Brendan Eich en 1995 y se convirtió en un estándar oficial del World Wide
+    Web Consortium (W3C) en 1997.</p>
+
+
+<h2>¿Por qué decimos que Javascript es un lenguaje dinámico?</h2>
+<p>Corre directamente en la etapa de Runtime, sin una etapa de compilación previa. Esto permite probar nuestro código
+    inmediatamente; pero también es lo que hace que los errores no se muestren sino hasta que se ejecuta el programa. Lo
+    que se ve a primera vista, cuando se analiza el código, es muy probable que no sea lo que se va a obtener cuando el
+    programa se ejecute.</p>
+
+<p>JavaScript permite declarar (por ejemplo) variables cuyo valor (y tipo) solo se conocerá al momento de su ejecución
+    en función de las condiciones dadas al momento de correrlo en un entorno real. En cambio, los lenguajes estáticos no
+    compilarán en código ejecutable a menos que todos los valores (o tipos de valores) se conozcan por adelantado.</p>
+
+
+<h2>¿Por qué es débilmente tipado?</h2>
+<p>Porque los tipos de datos no están bien definidos en el lenguaje y permite, por ejemplo, operaciones entre numerosos
+    y letras. Esto sucede porque el lenguaje asume tipos de datos que no necesariamente fueron los que se querían
+    representar. Se pueden hacer operaciones entre tipos distintos de datos (enteros con strings, booleanos con enteros,
+    etc.). Ejemplo:</p>
+
+4 + "7"; // 47
+4 * "7"; // 28
+2 + true; // 3
+false - 3; // -3
+
+
+<h2>¿Realmente es Javascript un lenguaje interpretado?</h2>
+<p>Sí, y la razón es que el navegador lee línea por línea nuestro código, el cual le indica lo que tiene que ir
+    haciendo, sin la necesidad de compilar. Todo esto es controlado por el motor de Javascript V8 del navegador</p>
+
+
+<h2>Qué significa que Javascript es Backwards Compatible</h2>
+<p>Todas las funciones nuevas que salen para Javascript no dañarán el trabajo ya hecho previamente, pero no se podrá
+    utilizar en nuestro entorno de trabajo inmediatamente. Para solucionar esto está Babel, que permite usar las nuevas
+    características del lenguaje, pero lo transforma a una versión que el navegador pueda entender.</p>
+
+
+<!-- ---------- --> <!-- ---------- --> <!-- ---------- -->
+
+
+<h2>¿Por qué JavaScript?</h2>
+<p>Antes del 2019, para construir una página web eran necesarias tres tecnologías. El lenguaje que crea la estructura
+    (HTML), otro que añade estilos (CSS) y un lenguaje de programación, este era JavaScript.</p>
+<p>Por este motivo, JavaScript era la única tecnología que se utilizaba para dotar de interactividad a la página.
+    Después del 2019, la W3C (World Wide Web Consortium) genera WebAssembly. Este es un lenguaje de programación nuevo
+    que te permite desarrollar aplicaciones web con otros lenguajes de programación, como C++ o Python.</p>
+<p>Sin embargo, JavaScript aún tiene una comunidad enorme de desarrolladores que fortalecen el dominio de este lenguaje.
+    A continuación nos enfocaremos en las áreas que puedes aplicar para aprenderlo.</p>
+
+
+<h2>Desarrollo Web</h2>
+<p>Para construir aplicaciones web, existen librerías o frameworks robustos basados en JavaScript. Algunos de estos son:
+    Angular, React o Vue.</p>
+
+
+<h2>Desarrollo de aplicaciones</h2>
+<p>Si el desarrollo web no es lo tuyo, también puedes utilizar JavaScript para construir aplicaciones nativas. React
+    Native es un framework que te permite construir aplicaciones nativas en Android o iOS.</p>
+<p>Electron es un framework que te permite construir aplicaciones de escritorio en Mac o Windows.</p>
+
+
+<h2>Backend o Internet of Things (IOT)</h2>
+<p>Node.js es un entorno de ejecución de JavaScript del lado del servidor. Este te permite manejar las solicitudes y
+    respuestas que el navegador recibe por medio del usuario, este componente se lo conoce como Backend, mientras que
+    todas las interacciones con el usuario se denomina Frontend.</p>
+<p>Igualmente, puedes construir aplicaciones dedicadas al IOT (Internet of Things), que te permite relacionar objetos
+    cotidianos con el internet.</p>
+
+
+<!-- ---------- --> <!-- ---------- --> <!-- ---------- -->
+
+
+<h2>Elementos de un Lenguaje de Programación: Variables, Funciones y Sintaxis</h2>
+<p>En JavaScript existe dos componentes principales: datos que guardamos en memoria y tareas que haremos con esos datos.
+    Estos conforman los elementos de un lenguaje de programación.</p>
+
+
+<h2>Herramientas para ejecutar código JavaScript</h2>
+<p>Visual Studio Code es el editor de código que se recomienda utilizar para tus proyectos y ofrece varias
+    características para mejorar tu experiencia en el desarrollo.Los archivos de JavaScript tienen la extensión .js al
+    final.</p>
+<p>La consola del navegador es importante si quieres probar código JavaScript directamente. Ingresas a la consola
+    mediante la combinación de teclas Ctrl + Shift + I o clic derecho e “Inspeccionar” en tu navegador preferido (de
+    preferencia Google Chrome).</p>
+<p>También puedes utilizar codi.link. Codi.link es un editor de código para escribir HTML, CSS y JavaScript, de manera
+    que se visualice el resultado a tiempo real. Si estás usando Visual Studio Code, instala la extensión Code Runner
+    que te permite ejecutar bloques de JavaScript y mostrar el resultado en la terminal.</p>
+
+
+<h2>Comentarios en JavaScript</h2>
+<p>Los comentarios son descripciones que escribimos, pero que el compilador de JavaScript ignorará. ¿Cómo se establece
+    esto? De dos maneras: en una sola línea con //; y en múltiples líneas utilizando /* */.</p>
+
+// Este es un comentario de una línea
+/*
+Este es un comentarios
+con múltiples líneas
+*/
+
+
+<h2>Valores por consola</h2>
+<p>Para mostrar valores por consola, se utiliza la función console.log() para imprimir por consola. Hay una clase de
+    funciones, así que ya aprenderás lo que es.</p>
+<p>Ejecuta lo siguiente en la consola de tu navegador y observa lo que sucede.</p>
+
+console.log("Hola Mundo")
+
+
+<h2>Tipos de datos</h2>
+<p>Los tipos de datos es la característica propia que tiene un valor. En JavaScript existen los tipos de datos
+    primitivos y los no primitivos.</p>
+
+
+<h2>Datos primitivos</h2>
+<p>Los tipos de datos primitivos son los siguientes:</p>
+
+number: indica un valor numérico, ya sea entero o flotante (con decimales).
+string: indica una cadena de caracteres, el valor está envuelto en comillas dobles " o simples '.
+boolean indica un valor lógico binario, es decir, los valores "true" o "false".
+null: indica un valor nulo.
+undefined: indica un valor no definido.
+
+<p>Existen dos tipos primitivos más: bigint y symbol, pero es un tema que aprenderás más adelante.</p>
+
+
+<h2>Tipos no primitivos o de objeto</h2>
+<p>Los tipos de datos de objeto o no primitivos son los siguientes:</p>
+
+function: indica una representación de función.
+object: indica una representación de objetos.
+
+
+<h2>Palabra reservada</h2>
+<p>La palabra reservada typeof permite identificar el tipo de dato de un valor en JavaScript. Existe una excepción, al
+    ejecutar typeof null, en la consola mostrará 'object', esto es un error dentro JavaScript.</p>
+<p>Ingresa a la consola del navegador, ejecuta cada línea del siguiente ejemplo y observa cuál es la respuesta.</p>
+
+// Tipos de datos primitivos
+typeof 5 // 'number'
+typeof "hola" // 'string'
+typeof true // 'boolean'
+typeof null // 'object'
+typeof undefined // 'undefined'
+
+// Tipos de datos de objeto
+typeof console.log // 'function'
+typeof {tipo: "objeto"} // 'object'
+typeof [1,2,3,4] // 'object'
+
+
+<!-- ---------- --> <!-- ---------- --> <!-- ---------- -->
+
+
+<h2>¿Qué es una variable?</h2>
+<p>Una variable es una palabra que representa algo que cambia o experimenta algún tipo de modificación y carece de
+    estabilidad, constancia y mutabilidad.</p>
+<p>En términos más simples, la variable es un símbolo que señala a un elemento no específico dentro de un grupo
+    particular. Este grupo se denomina a menudo conjunto universal de la variable y cada elemento en este conjunto es un
+    valor de la variable. Se encuentran en algoritmos, afirmaciones y fórmulas.</p>
+
+
+<h2>Ejemplos y usos de las variables</h2>
+<p>Las variables son elementos esenciales en las fórmulas, afirmaciones y algoritmos, ya que pueden adquirir diferentes
+    valores mientras se mantienen dentro de un conjunto específico.</p>
+<p>Por ejemplo, la variable “x” pertenece al conjunto {1, 3, 5, 7}, lo que significa que puede ser reemplazada por
+    cualquier número impar menor que 12.</p>
+<p>Esto proporciona flexibilidad y adaptabilidad en diversos contextos y situaciones. De manera similar, la variable “y”
+    puede tomar valores entre 11 y 19, si se define como mayor que 10 y menor que 20. Esta capacidad de ajuste y
+    modificación de las variables según las necesidades específicas de un problema, permite una resolución más
+    eficiente.</p>
+
+
+<h2>Uso de variables en programación y Javascript</h2>
+<p>En programación, una variable es un lugar en memoria en la cual podemos guardar objetos (números, texto, etc.). Esta
+    posee un identificador o nombre con el cual podemos llamarla más tarde cuando la necesitemos.</p>
+<p>En términos más específicos, una variable consta de tres elementos principales:</p>
+
+Nombre: es el identificador único que se utiliza para referirse a la variable.
+Tipo de dato: es el tipo de información que se almacena en la variable, como números enteros, decimales, cadenas de
+texto, booleanos, entre otros.
+Valor: es el contenido actual almacenado en la variable.
+
+
+<h2>Tipos de variables en JavaScript</h2>
+Número (Number): Almacena valores numéricos, ya sean enteros o decimales.
+Cadena (String): Contiene secuencias de caracteres, como texto.
+Booleano (Boolean): Representa valores verdaderos (true) o falsos (false).
+Nulo (Null): Indica que una variable no tiene valor o está vacía.
+Indefinido (Undefined): Cuando una variable se ha declarado pero no se le ha asignado un valor.
+Arreglo (Array): Almacena una lista ordenada de elementos.
+Objeto (Object): Estructura de datos que puede contener propiedades y métodos.
+Función (Function): Un bloque de código reutilizable que puede ser llamado.
+Símbolo (Symbol): Identificador único utilizado para propiedades de objetos.
+BigInt: Para manejar números enteros grandes.
+
+
+<h2>Declaración y asignación de variables en JavaScript</h2>
+let nombre
+
+<p>De esta manera, existirá un espacio en memoria que haga referencia a la variable nombre, pero por defecto tendrá un
+    valor undefined.Para guardar un valor en esa variable, se utiliza el símbolo de igual ( =) , seguido del valor. Esto
+    se denomina asignación.</p>
+let nombre
+nombre = "JavaScript"
+
+<p>Se puede declarar y asignar en una misma línea, sin repetir el nombre de la variable. A esto se le dice inicializar
+    una variable.</p>
+let nombre = "JavaScript"
+
+<h2>Cómo acceder a una variable</h2>
+<p>Una vez que hayas declarado y asignado un valor a una variable, ya puedes emplear en tu código usando su nombre, sin
+    la necesidad de escribir nuevamente var.</p>
+let nombre = "JavaScript"
+console.log(nombre) //"JavaScript"
+
+
+<!-- ---------- --> <!-- ---------- --> <!-- ---------- -->
+
+
+<h2>Qué son las funciones en JavaScript</h2>
+<p>Las funciones son bloques de código que solucionan un problema específico para ser reutilizados. Existen dos tipos de
+    funciones: declarativas y expresivas.</p>
+
+<h2>Qué son las funciones declarativas</h2>
+<p>En JavaScript, las funciones declarativas se las declara con la palabra reservada function.</p>
+
+<h2>Cómo declarar una función declarativa</h2>
+<p>La declaración de una función declarativa está constituido por las siguientes partes:</p>
+La palabra reservada function.
+El nombre de la función: el cual será guardado como referencia en memoria.
+Los parámetros: están envueltas en paréntesis (), son variables propias de la función y deberán utilizarse en el
+contenido. Hacen referencia a los argumentos en la invocación.
+El contenido: está envuelto por llaves {}, contendrá las líneas de código correspondientes a la lógica del problema.
+El valor retornado: es un único valor que devuelve la función cuando es llamada. Se lo especifica por la palabra
+reservada return. Si no existe, la función devolverá un valor undefined por defecto.
+
+// Declaración
+function suma (a,b){
+return a + b
+}
+/*
+function nombre (parámetros) {
+contenido
+return valor
+}
+*/
+
+<p>De esta manera, definimos la lógica de la función, pero no la estamos utilizando. Para generar los valores es
+    necesario invocar la función en el código según sea necesario.</p>
+
+<h2>Cómo invocar una función declarativa</h2>
+<p>La invocación o llamada es la manera que utilizamos las funciones para utilizar el valor de retorno (return) según
+    ciertos argumentos. La invocación de la función declarativa está constituido por dos partes:</p>
+El nombre de la función especificada en la declaración.
+Los argumentos, son los valores para cada uno de parámetros de la función envueltos entre paréntesis.
+
+// Invocación
+suma(2,3)
+// nombre(argumentos)
+
+<p>La invocación sirve para emplear una función con diferentes argumentos y guardarlos en una variable.</p>
+var resultado1 = suma(2,3)
+var resultado2 = suma(4,6)
+var resultado3 = suma(10,12)
+
+console.log(resultado1) //5
+console.log(resultado2) //10
+console.log(resultado3) //22
+
+<p>También existen funciones que simplemente se invocan, pero debes tener en cuenta que retornan por defecto undefined.
+</p>
+// Declaración
+function saludar(nombre){
+console.log("Hola " + nombre)
+}
+// Invocaciones
+saludar("JavaScript") //"Hola JavaScript"
+saludar("Platzi") // "Hola Platzi"
+
+<h2>Plantillas literales</h2>
+<p>También puedes utilizar las plantillas literales, una nueva característica del lenguaje para utilizar las variables
+    dentro de ${variable} entre las tildes invertidas ( `` ),</p>
+console.log(`Hola ${nombre}`)
+
+<h2>Qué son las funciones expresivas o anónimas</h2>
+<p>Las funciones expresivas o anónimas consisten en guardar la función en una variable. Tienen la misma declaración e
+    invocación que las funciones declarativas. La diferencia consiste en no especificar un nombre en la función, sino
+    que utiliza el nombre de la variable.</p>
+// Declaración
+var suma = function (a, b) {
+return a + b
+}
+// Invocación
+var resultado = suma(2, 2)
+
+console.log(resultado) //4
+
+
+<!-- ---------- --> <!-- ---------- --> <!-- ---------- -->
+
+
+<h2>ScopeClase</h2>
+<p>El scope es cada uno de los entornos donde las variables tienen alcance dentro del código de JavaScript. En otras
+    palabras, determina que valor tendrá la variable dependiendo dónde se encuentre.</p>
+<p>Imagina que pierdes algo importante (llaves, dinero, celular), comienzas a buscar este objeto por los lugares más
+    cercanos en que te encuentras; si no lo encuentras, buscas en los lugares más lejanos y así sucesivamente hasta
+    encontrarlo. Las llaves son las variables y tú eres JavaScript.</p>
+<p>Si haces referencia a una variable, el motor de JavaScript buscará su declaración en el entorno más cercano, y
+    seguirá buscando en entornos más lejanos hasta llegar a la línea de código que la variable esté declarada, pero no
+    en viceversa. A este proceso se lo denomina cadena de scope (scope chaining).</p>
+
+<h2>Tipos de scope</h2>
+<p>Existen dos tipos de scope: global y local. El scope local puede ser de función o de bloque. Un bloque es toda
+    porción de código que está encerrada entre llaves {}, estos pueden ser los bloques: función, if, else, while, y for.
+</p>
+<p>En la imagen anterior, el entorno más cercano para la variable saludo es el scope de bloque, le sigue el scope de
+    función y finalmente el scope global. Este es un ejemplo del recorrido que sigue JavaScript hasta encontrar la
+    variable referenciada.</p>
+
+<h2>Qué es el scope global</h2>
+<p>Las variables globales son aquellas que se encuentran declaradas fuera de los bloques de código o funciones .El scope
+    global es el entorno donde las variables globales pueden ser accedidas desde cualquier lugar de nuestro programa.
+</p>
+
+<p>En el siguiente ejemplo, mira el código y piensa qué mostrará en consola. Una vez tengas las respuestas, abre la
+    consola. ¿Qué sucedió?</p>
+var nombre = "JavaScript"
+
+function saludar(){
+console.log("Hola " + nombre)
+}
+
+saludar()
+
+<p>Con este ejemplo podemos concluir que la función saludar tiene acceso a la variable nombre. ¿Por qué? Porque la
+    variable nombre está en un scope global.</p>
+<p>Volviendo al ejemplo de las llaves, JavaScript busca la variable en el contexto más cercano (scope local de función)
+    ¿la encontró? No, entonces sigue buscando en el scope global ¿la encontró? Sí, entonces la utiliza. Ten en cuenta
+    que JavaScript busca de un scope cercano a uno lejano, pero no en viceversa, esto es importante para el scope local.
+</p>
+<p>Entonces, una variable global puede ser accedida en cualquier parte, porque el scope global es el último entorno en
+    el que JavaScript busca una variable. Recuerda esto cuándo se hable de scope local.</p>
+
+<h2>Qué es el scope local</h2>
+<p>Las variables locales son aquellas que se encuentran declaradas dentro de los bloques de código o funciones. El scope
+    local es el entorno donde las variables locales solo se pueden acceder desde una función o bloque del programa.</p>
+<p>Observa el siguiente código y piensa cuál será el resultado.</p>
+function saludo() {
+var nombre = "Andres"
+console.log(nombre)
+}
+
+saludo()
+console.log(nombre)
+
+<p>Primeramente, al invocarse la función saludo imprimirá "Andres" por consola, pero inmediatamente después, existirá un
+    error de referencia.</p>
+function saludo() {
+let nombre = "Andres"
+console.log(nombre)
+}
+
+saludo() // "Andres"
+console.log(nombre) // ReferenceError: nombre is not defined
+
+<p>Esto sucede porque la variable nombre tiene un scope local, por lo que solo se puede acceder dentro de la misma.
+    Volviendo al ejemplo de las llaves, JavaScript busca la variable en el contexto más cercano (scope global) ¿la
+    encontró? No, entonces no lo encontrará en ningún lado y arroja un error de referencia.</p>
+<p>Esto sucede porque JavaScript no puede volver a buscar a una función que no sabe si encontrará la variable o no,
+    teniendo en cuenta que puede haber una variedad ilimitada de funciones, ¿cuál buscar? Por eso, el alcance de una
+    función local es el lugar donde fue declarada.</p>
+
+
+<!-- ---------- --> <!-- ---------- --> <!-- ---------- -->
+
+
+<h2>Hoisting</h2>
+<p>Hoisting es un término para describir que las declaraciones de variables y funciones son desplazadas a la parte
+    superior del scope más cercano, scope global o de función. Esto sucede solamente con las declaraciones y no con las
+    asignaciones.</p>
+
+<p>El código permanece igual, solo es una interpretación del motor de JavaScript. En el caso de las variables solamente
+    sucede cuando son declaradas con var.</p>
+
+<h2>Hoisting en variables declaradas con var</h2>
+<p>Mira el siguiente código, ¿qué crees que sea el resultado del console.log?</p>
+console.log(nombre) // undefined
+var nombre = "Andres"
+
+<p>La respuesta del console.log es undefined, porque al hacer referencia a una variable que no está declarada aún,
+    JavaScript crea esta variable antes de declararla y le asigna un valor de undefined.</p>
+<p>Lo que JavaScript está haciendo sería lo siguiente:</p>
+// Hoistin: Declara y asigna undefined
+var nombre = undefined
+console.log(nombre) // undefined
+nombre = "Andres"
+
+<p>Aquí el nombre de Hoisting o elevación.</p>
+
+<h2>Hoisting en funciones</h2>
+<p>Mira el siguiente código, ¿qué crees que sea el resultado del console.log?</p>
+console.log( saludar() )
+
+function saludar() {
+return "Hola"
+}
+
+<p>La respuesta es "Hola", porque al invocar una función que no está declarada, JavaScript la eleva y por eso podemos
+    invocar una función antes de declararla.</p>
+// Hoisting: Declara la función antes de ser invocada
+function saludar() {
+return "Hola"
+}
+
+console.log( saludar() ) // "Hola"
+
+<p>Pero, lo que realmente sucede es que JavaScript guarda la función en memoria en la fase de creación de un contexto de
+    ejecución, no asigna undefined como con las variables.</p>
+
+<h2>Buenas prácticas</h2>
+<p>El tema de Hoisting solo sucede con las declaraciones de variables y funciones, por lo que se** recomienda declarar
+    las variables y las funciones lo más arriba posible del código**, para evitar errores.</p>
+<p>También, el tema de hoisting ya está solucionado con las nuevas formas de declarar variables con let y const.</p>
+
+
+<!-- ---------- --> <!-- ---------- --> <!-- ---------- -->
+
+
+<h2>Coerción</h2>
+<p>La coerción consiste en transformar de un tipo de dato a otro de una variable. Existen dos tipos de coerción:
+    implícita y explícita.</p>
+
+<h2>Qué es la coerción implícita</h2>
+<p>La coerción implícita consiste en la transformación de tipos mediante la ayuda de JavaScript. Esto ocurre en
+    operaciones de diferentes tipos, ya que es un lenguaje débil y dinámicamente tipado.</p>
+<p>Al momento de compilar el código, el motor de JavaScript, si encuentra alguna incoherencia (una suma de un número con
+    un string), el motor lo interpreta a su manera y arroja un valor que puede ser erróneo.</p>
+<p>Algunos de los ejemplos de coerción implícita son los siguientes:</p>
+4 + "7" // 47
+4 * "7" // 28
+2 + true // 3
+false - 3 // -3
+!3 // false
+
+<p>Para evitar esto realiza la coerción explícita para manejar tipos de datos iguales antes de realizar cualquier
+    operación.</p>
+
+<h2>Qué es la coerción explícita</h2>
+<p>La coerción explícita es la transformación de tipos de datos que controlamos el resultado. Para realizar estas
+    transformaciones utiliza las funciones Number(), String() y Boolean(), para convertir a tipo número, string y
+    lógico, respectivamente.</p>
+Number("47") // 47
+String(51) // "51"
+Boolean(1) // true
+
+<p>Puedes utilizar la palabra reservada typeof para comprobar el tipo de dato transformado.</p>
+Number("47") // 'number'
+String(51) // 'string'
+Boolean(1) // 'boolean'
+
+
+<!-- ---------- --> <!-- ---------- --> <!-- ---------- -->
+
+
